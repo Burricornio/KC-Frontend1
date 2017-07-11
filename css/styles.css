@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #dedede
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/************** ESTILOS CABECERA *************/
+.title{
+    font-size: 60px;;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #034f80;
+    letter-spacing: 2px;
+    font-family: 'Chewy', cursive;
+}
+.navbar {
+    position: fixed;
+    left: 10%;
+    top: 20%;
+    background-color: #1779B7;
+    border-radius: 50%;
+    list-style-type: none;
+    text-align: center;
+}
+.navbar-item {
+    padding: 6px 60px;
+}
+.navbar-item a {
+    text-decoration: none;
+    color: #FFF;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family: 'Chewy', cursive;
+}
+.navbar-item a:hover {
+    color:#ffeb00;
+}
+.navbar-item:first-child {
+    margin-top: 10%;
+}
+.navbar-item:last-child {
+    margin-bottom: 10%;
+}
+
+/************** ESTILOS SECCIONES *************/
+.section-title {
+    text-align: center;
+    font-family: 'Chewy', cursive;
+}
