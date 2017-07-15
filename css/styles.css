@@ -5,13 +5,23 @@
     font-family: 'Roboto', sans-serif;
 }
 body {
-    background-color: #dedede
+    background-color: #dedede;
+    color: #FFF;
+}
+p {
+    margin: 10px 0;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+figcaption {
+    font-size: 12px;
 }
 .container {
-    max-width: 1200px;
     margin: 0 auto;
 }
-.logo {
+.logo  , .burri-fondo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,36 +30,42 @@ body {
 
 /************** ESTILOS CABECERA *************/
 .title{
-    font-size: 60px;;
+    font-size: 50px;
     position: absolute;
-    top: 2%;
     left: 50%;
     transform: translate(-50%);
-    color: #034f80;
+    background-color: #084369;
     letter-spacing: 2px;
     font-family: 'Chewy', cursive;
+    width: 100%;
+    text-align: center;
 }
 .navbar {
     position: fixed;
-    left: 10%;
-    top: 20%;
+    left: 5%;
+    top: 15%;
     background-color: #1779B7;
     border-radius: 50%;
     list-style-type: none;
     text-align: center;
+    z-index: 1;
+  -webkit-box-shadow: 6px 6px 7px -3px rgba(138,127,138,1);
+-moz-box-shadow: 6px 6px 7px -3px rgba(138,127,138,1);
+box-shadow: 6px 6px 7px -3px rgba(138,127,138,1);
 }
 .navbar-item {
     padding: 6px 60px;
 }
 .navbar-item a {
     text-decoration: none;
-    color: #FFF;
     letter-spacing: 2px;
     font-size: 20px;
     font-family: 'Chewy', cursive;
+    padding: 3px;
+    color: #FFF;
 }
 .navbar-item a:hover {
-    color:#ffeb00;
+    color: #084369;
 }
 .navbar-item:first-child {
     margin-top: 10%;
@@ -59,7 +75,146 @@ body {
 }
 
 /************** ESTILOS SECCIONES *************/
+section {
+    overflow: auto;
+    max-width: 1400px;
+    margin: 0 auto;
+    -webkit-box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
+-moz-box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
+box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
+
+}
 .section-title {
     text-align: center;
     font-family: 'Chewy', cursive;
+    background-color: #084369;
+    padding: 8px;
+    letter-spacing: 2px;
+    font-size: 26px;
 }
+
+/****** QUIEN SOY *****/
+
+.quien-contenido {
+    color: white;
+    padding: 40px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5a6f7b;
+}
+.quien-foto {
+    width: 30%;
+}
+.quien-texto {
+    padding: 40px;
+    width: 70%;
+    float: left;
+    overflow: auto;
+    
+}
+
+/****** ESTUDIOS *****/
+.estudios-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    padding: 40px 0;
+}
+.estudios-foto {
+    margin: 0 40px;
+}
+.estudios-caption {
+    background-color: #5a6f7b;;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+    font-size:16px;
+}
+
+/* CURRO */
+.flip {
+    position: relative;
+    height: 300px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.experiencia {
+    background: #FFF;
+}
+.experiencia-col {
+    width: 25%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flip-div {
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform 1s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.front {
+    height: 200px;
+    width: 200px;
+}
+.back {
+    height: 220px;
+    width: 220px;
+    background: #5a6f7b;;
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+.flip:hover .front {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+.flip:hover .back {
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+}
+.experiencia-plus {
+    color: #5a6f7b;;
+    margin-top: 10px;
+}
+.experiencia-title {
+    background-color: #084369;
+    width: 100%;
+    text-align: center;
+    padding: 4px;
+    font-size:16px;
+}
+.experiencia-lista {
+    margin-top: 14px; 
+}
+.experiencia-lista > li {
+    margin: 4px 0;
+}
+
+/***** SOBRE MI *****/
+.sobre-mi {
+     background-color: #5a6f7b;;
+}
+.bajista-video {
+    margin: 0 25px;
+}
+.sobre-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding: 40px 70px;
+}
+.sobre-texto {
+    text-align: center;
+}
+
