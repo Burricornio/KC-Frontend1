@@ -66,6 +66,7 @@ box-shadow: 6px 6px 7px -3px rgba(138,127,138,1);
 }
 .navbar-item a:hover {
     color: #084369;
+    transition: color .2s;
 }
 .navbar-item:first-child {
     margin-top: 10%;
@@ -97,7 +98,7 @@ box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
 
 .quien-contenido {
     color: white;
-    padding: 40px 70px;
+    padding: 60px 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +108,7 @@ box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
     width: 30%;
 }
 .quien-texto {
-    padding: 40px;
+    padding: 40px 65px;
     width: 70%;
     float: left;
     overflow: auto;
@@ -120,7 +121,7 @@ box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
     justify-content: center;
     align-items: center;
     background-color: #FFF;
-    padding: 40px 0;
+    padding: 60px 0;
 }
 .estudios-foto {
     margin: 0 40px;
@@ -133,7 +134,7 @@ box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
     font-size:16px;
 }
 
-/* CURRO */
+/* EXPERIENCIA */
 .flip {
     position: relative;
     height: 300px;
@@ -152,6 +153,7 @@ box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0
 }
 .flip-div {
     position: absolute;
@@ -203,7 +205,7 @@ box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
 
 /***** SOBRE MI *****/
 .sobre-mi {
-     background-color: #5a6f7b;;
+     background-color: #5a6f7b;
 }
 .bajista-video {
     margin: 0 25px;
@@ -215,6 +217,139 @@ box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
      padding: 40px 70px;
 }
 .sobre-texto {
-    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 0 40px 0;
+}
+
+/***** CONTACTO *****/
+.formulario-contacto {
+    background-color: #FFF;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    width: 50%;
+    padding: 60px 0;
+ color:#5a6f7b; 
+}
+.group 			  { 
+  position:relative; 
+  margin-bottom:33px; 
+}
+input {
+    color: #084369;;
+}
+input[type=text] 				{
+  padding:10px 10px 10px 5px;
+  display:block;
+  width: 100%;;
+  border:none;
+  border-bottom:1px solid #5a6f7b;
+  font-size: 16px;
+}
+input[type=text]:focus 		{ 
+    outline:none; 
+    }
+
+.material 				 {
+  color:#5a6f7b; 
+  font-weight:normal;
+  position:absolute;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+input:focus ~ .material, input:valid ~ .material 		{
+  top:-20px;
+  font-size:12px;
+  color:#084369;
+}
+.bar 	{ 
+    position:relative; display:block;
+ }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background: #084369;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+.form-row {
+    padding-bottom: 10px;
+}
+.form-row:nth-child(5) {
+    padding-bottom: 0;
+}
+input[type="radio"]{
+    padding-left: 2px;
+    margin-right: 5px;
+}
+.texto-otros {
+    display: none;
+}
+textarea {
+    width: 100%;
+font-family: 'Roboto', sans-serif;
+color: #5a6f7b; 
+font-size: 16px;
+resize: none;
+ margin-top: 10px;
+
+}
+textarea:focus {
+    outline: 0 none;
+    border: 2px solid #084369;
+   
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+  display: block;
+  margin: 30px auto;
+  padding: 0;
+  width: 200px;
+  padding: 20px;
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  
+  background-color: #1779B7;
+  color: #ecf0f1;
+  
+  transition: background-color .2s;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #084369;
+}
+
+/**** WEATHER *****/
+.galleta {
+    background-color: #084369;
+    margin-top: 30px;
+    padding: 20px;
 }
 
