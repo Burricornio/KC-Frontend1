@@ -27,6 +27,7 @@ figcaption {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    z-index: -1;
 }
 
 /************** CABECERA *************/
@@ -43,8 +44,8 @@ figcaption {
 }
 .navbar {
     position: fixed;
-    left: 5%;
-    top: 15%;
+    left: 2%;
+    top: 12%;
     background-color: #1779B7;
     border-radius: 50%;
     list-style-type: none;
@@ -57,7 +58,7 @@ figcaption {
     animation-duration: 1s;
 }
 .navbar-item {
-    padding: 6px 60px;
+    padding: 6px 80px;
 }
 .navbar-item a {
     text-decoration: none;
@@ -72,11 +73,12 @@ figcaption {
     transition: color .2s;
 }
 .navbar-item:first-child {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .navbar-item:last-child {
     margin-bottom: 10%;
 }
+
 
 /************** SECCIONES *************/
 section {
