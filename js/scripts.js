@@ -1,27 +1,35 @@
+$(document).ready(function() {
 
-          $(document).ready(function(){
-              $(".otros").change(function(){
-                  $(".texto-otros").show();
-              });
+    // Textarea otros
+    $(".otros").change(function() {
+        $(".texto-otros").show();
+    });
 
-              $('.ver-mensaje').click(function(){
-     
-                var url="galleta.html";
+    // smooth scroll
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
 
-$.ajax({
-type : "GET",
-url : url,
-success : function(data) {
-console.log("data",data);
-},
-error : function(objXMLHttpRequest) {
-console.log("error",objXMLHttpRequest);
-}
+        var target = this.hash,
+            $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 100
+        }, 700, 'swing', function() {
+            window.location.hash = target;
+        });
+    });
+
+    // Burrigalleta de la suerte
+    $(".ver-mensaje").click(function() {
+        $.ajax({
+            url: "../galleta.js",
+            dataType: "script"
+        });
+    });
+   
 });
-                  
+ 
+  
 
-              })
-
-
-          })
+  
 

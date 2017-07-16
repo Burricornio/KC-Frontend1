@@ -9,26 +9,9 @@
       <link rel="stylesheet" href="./css/font-awesome.css">
       <link href="https://fonts.googleapis.com/css?family=Chewy|Roboto" rel="stylesheet">
       <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  <script>  
-  $(document).ready(function(){
-	$('a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
-
-	    var target = this.hash,
-	    $target = $(target);
-
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top - 100
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
-});
-  </script>
-
+         src="https://code.jquery.com/jquery-3.2.1.min.js"
+         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+         crossorigin="anonymous"></script>
    </head>
    <body>
       <header class="header">
@@ -40,7 +23,6 @@
                <li class="navbar-item"><a href="#experiencia">EXPERIENCIA</a></li>
                <li class="navbar-item"><a href="#sobre">SOBRE MI</a></li>
                <li class="navbar-item"><a href="#contacto">CONTACTO</a></li>
-
             </ul>
          </nav>
       </header>
@@ -128,7 +110,7 @@
             <article class="experiencia-col">
                <div class="flip">
                   <div class="flip-div front">
-                     <img src="./img/ad.png">
+                     <img src="./img/adolfodominguez.png">
                      <i class="fa fa-plus-circle experiencia-plus fa-3x" aria-hidden="true"></i>
                   </div>
                   <div class="flip-div back">
@@ -219,71 +201,55 @@
                      <span class="bar"></span>
                      <label class="material">¿Cúal es tu e-mail?</label>
                   </div>
-                  <div class="group">     
-                      <div class="form-row">¿Cómo me has conocido?</div> 
-                      <div class="form-row">
-                           <input type="radio" name="como" required>
-                          <label>En bla bla car</label> 
-                    
+                  <div class="group">
+                     <div class="form-row">¿Cómo me has conocido?</div>
+                     <div class="form-row">
+                        <input type="radio" name="como" required>
+                        <label>En bla bla car</label> 
                      </div>
                      <div class="form-row">
-                         <input type="radio" name="como" required>
-                         <label>En el Himalaya</label> 
-                     
+                        <input type="radio" name="como" required>
+                        <label>En el Himalaya</label> 
                      </div>
                      <div class="form-row">
-                         <input type="radio" name="como" required>
-                         <label>Por tinder</label> 
+                        <input type="radio" name="como" required>
+                        <label>Por tinder</label> 
                      </div>
-                      <div class="form-row">
-                         <input type="radio" name="como" class="otros" required>
-                         <label>Otros</label> 
-         
-     </div>
-
-                         <div class="texto-otros">
-        <input type="text" placeholder="¿Cómo fue?">
+                     <div class="form-row">
+                        <input type="radio" name="como" class="otros" required>
+                        <label>Otros</label> 
                      </div>
-                     
+                     <div class="texto-otros">
+                        <input type="text" placeholder="¿Cómo fue?">
+                     </div>
                   </div>
                   <div class="group">      
                      <input type="text" pattern="[0-9]{9}" required>
                      <span class="bar"></span>
                      <label class="material">¿Cúal es tu número de teléfono? Ya sabes que son 9 números ;-)</label>
                   </div>
-
-                            <div class="group">    
-                                <label>Cúentame algo o no podrás enviar el formulario</label>  
-                     <textarea rows="4" cols="50" required >
-
-</textarea>
+                  <div class="group">    
+                     <label>Cúentame algo o no podrás enviar el formulario</label>  
+                     <textarea rows="6" cols="50" required >
+                     </textarea>
                   </div>
-
-                                 <div class="group">    
-                                <button type="submit" class="btn">ENVIAR</button>
-
-</textarea>
+                  <div class="group">    
+                     <button type="submit" class="btn">ENVIAR</button>
+                     </textarea>
                   </div>
-
                </form>
             </div>
-
-
          </section>
-         <section>
+         <section class="no-shadow">
             <div class="galleta">
-                <p>El burricornio tiene un mensaje para ti:</p>
-                 <button type="submit" class="btn ver-mensaje">VER MENSAJE</button>
-                 <p class="galleta-mensaje"></p>
+               <button type="submit" class="btn ver-mensaje">PRUEBA LA BURRIGALLETA DE LA SUERTE</button>
+               <p class="galleta-mensaje"></p>
             </div>
          </section>
       </main>
-   
+      <footer>
+         Derechos registrados Burricornio Web Design 2017
+      </footer>
       <script src="./js/scripts.js"></script>
-
-     
-
-      
-
    </body>
 </html>

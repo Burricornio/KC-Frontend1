@@ -21,15 +21,16 @@ figcaption {
 .container {
     margin: 0 auto;
 }
-.logo  , .burri-fondo{
+.logo,
+.burri-fondo {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-/************** ESTILOS CABECERA *************/
-.title{
+/************** CABECERA *************/
+.title {
     font-size: 50px;
     position: absolute;
     left: 50%;
@@ -49,9 +50,11 @@ figcaption {
     list-style-type: none;
     text-align: center;
     z-index: 1;
-  -webkit-box-shadow: 6px 6px 7px -3px rgba(138,127,138,1);
--moz-box-shadow: 6px 6px 7px -3px rgba(138,127,138,1);
-box-shadow: 6px 6px 7px -3px rgba(138,127,138,1);
+    -webkit-box-shadow: 6px 6px 7px -3px rgba(138, 127, 138, 1);
+    -moz-box-shadow: 6px 6px 7px -3px rgba(138, 127, 138, 1);
+    box-shadow: 6px 6px 7px -3px rgba(138, 127, 138, 1);
+    animation-name: boton;
+    animation-duration: 1s;
 }
 .navbar-item {
     padding: 6px 60px;
@@ -75,15 +78,14 @@ box-shadow: 6px 6px 7px -3px rgba(138,127,138,1);
     margin-bottom: 10%;
 }
 
-/************** ESTILOS SECCIONES *************/
+/************** SECCIONES *************/
 section {
     overflow: auto;
     max-width: 1400px;
     margin: 0 auto;
-    -webkit-box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
--moz-box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
-box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
-
+    -webkit-box-shadow: 6px 6px 7px -2px rgba(138, 127, 138, 1);
+    -moz-box-shadow: 6px 6px 7px -2px rgba(138, 127, 138, 1);
+    box-shadow: 6px 6px 7px -2px rgba(138, 127, 138, 1);
 }
 .section-title {
     text-align: center;
@@ -94,11 +96,10 @@ box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
     font-size: 26px;
 }
 
-/****** QUIEN SOY *****/
-
+/************** QUIEN SOY *************/
 .quien-contenido {
     color: white;
-    padding: 60px 70px;
+    padding: 5% 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,29 +113,29 @@ box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
     width: 70%;
     float: left;
     overflow: auto;
-    
 }
 
-/****** ESTUDIOS *****/
+/************** ESTUDIOS *************/
 .estudios-contenido {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #FFF;
-    padding: 60px 0;
+    padding: 7% 0;
 }
 .estudios-foto {
     margin: 0 40px;
 }
 .estudios-caption {
-    background-color: #5a6f7b;;
+    background-color: #5a6f7b;
+    ;
     text-align: center;
     margin-top: 20px;
     padding: 5px;
-    font-size:16px;
+    font-size: 16px;
 }
 
-/* EXPERIENCIA */
+/************** EXPERIENCIA *************/
 .flip {
     position: relative;
     height: 300px;
@@ -142,7 +143,6 @@ box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .experiencia {
     background: #FFF;
@@ -163,7 +163,6 @@ box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
     display: flex;
     align-items: center;
     flex-direction: column;
-   
 }
 .front {
     height: 200px;
@@ -172,7 +171,8 @@ box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
 .back {
     height: 220px;
     width: 220px;
-    background: #5a6f7b;;
+    background: #5a6f7b;
+    ;
     transform: rotateY(-180deg);
     -webkit-transform: rotateY(-180deg);
 }
@@ -180,13 +180,13 @@ box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
     transform: rotateY(-180deg);
     -webkit-transform: rotateY(-180deg);
 }
-
 .flip:hover .back {
     transform: rotateY(0);
     -webkit-transform: rotateY(0);
 }
 .experiencia-plus {
-    color: #5a6f7b;;
+    color: #5a6f7b;
+    ;
     margin-top: 10px;
 }
 .experiencia-title {
@@ -194,18 +194,18 @@ box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
     width: 100%;
     text-align: center;
     padding: 4px;
-    font-size:16px;
+    font-size: 16px;
 }
 .experiencia-lista {
-    margin-top: 14px; 
+    margin-top: 14px;
 }
 .experiencia-lista > li {
     margin: 4px 0;
 }
 
-/***** SOBRE MI *****/
+/************** SOBRE MI *************/
 .sobre-mi {
-     background-color: #5a6f7b;
+    background-color: #5a6f7b;
 }
 .bajista-video {
     margin: 0 25px;
@@ -214,7 +214,7 @@ box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
     display: flex;
     justify-content: center;
     align-items: center;
-     padding: 40px 70px;
+    padding: 40px 70px;
 }
 .sobre-texto {
     width: 85%;
@@ -222,86 +222,87 @@ box-shadow: 6px 6px 7px -2px rgba(138,127,138,1);
     padding: 0 0 40px 0;
 }
 
-/***** CONTACTO *****/
+/************** CONTACTO *************/
 .formulario-contacto {
     background-color: #FFF;
-        display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .formulario {
     width: 50%;
     padding: 60px 0;
- color:#5a6f7b; 
+    color: #5a6f7b;
 }
-.group 			  { 
-  position:relative; 
-  margin-bottom:33px; 
+.group {
+    position: relative;
+    margin-bottom: 33px;
 }
 input {
-    color: #084369;;
+    color: #084369;
+    ;
 }
-input[type=text] 				{
-  padding:10px 10px 10px 5px;
-  display:block;
-  width: 100%;;
-  border:none;
-  border-bottom:1px solid #5a6f7b;
-  font-size: 16px;
+input[type=text] {
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    ;
+    border: none;
+    border-bottom: 1px solid #5a6f7b;
+    font-size: 16px;
 }
-input[type=text]:focus 		{ 
-    outline:none; 
-    }
-
-.material 				 {
-  color:#5a6f7b; 
-  font-weight:normal;
-  position:absolute;
-  left:5px;
-  top:10px;
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
-  -webkit-transition:0.2s ease all;
+input[type=text]:focus {
+    outline: none;
 }
-
-input:focus ~ .material, input:valid ~ .material 		{
-  top:-20px;
-  font-size:12px;
-  color:#084369;
+.material {
+    color: #5a6f7b;
+    font-weight: normal;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
 }
-.bar 	{ 
-    position:relative; display:block;
- }
-.bar:before, .bar:after 	{
-  content:'';
-  height:2px; 
-  width:0;
-  bottom:1px; 
-  position:absolute;
-  background: #084369;
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
-  -webkit-transition:0.2s ease all;
+input:focus ~ .material,
+input:valid ~ .material {
+    top: -20px;
+    font-size: 12px;
+    color: #084369;
+}
+.bar {
+    position: relative;
+    display: block;
+}
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #084369;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
 }
 .bar:before {
-  left:50%;
+    left: 50%;
 }
 .bar:after {
-  right:50%; 
+    right: 50%;
 }
-
-input:focus ~ .bar:before, input:focus ~ .bar:after {
-  width:50%;
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+    width: 50%;
 }
-
 .form-row {
     padding-bottom: 10px;
 }
 .form-row:nth-child(5) {
     padding-bottom: 0;
 }
-input[type="radio"]{
+input[type="radio"] {
     padding-left: 2px;
     margin-right: 5px;
 }
@@ -310,46 +311,76 @@ input[type="radio"]{
 }
 textarea {
     width: 100%;
-font-family: 'Roboto', sans-serif;
-color: #5a6f7b; 
-font-size: 16px;
-resize: none;
- margin-top: 10px;
-
+    font-family: 'Roboto', sans-serif;
+    color: #5a6f7b;
+    font-size: 16px;
+    resize: none;
+    margin-top: 10px;
 }
 textarea:focus {
     outline: 0 none;
     border: 2px solid #084369;
-   
 }
-
 .btn {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-  display: block;
-  margin: 30px auto;
-  padding: 0;
-  width: 200px;
-  padding: 20px;
-  border-width: 0;
-  outline: none;
-  border-radius: 2px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-  
-  background-color: #1779B7;
-  color: #ecf0f1;
-  
-  transition: background-color .2s;
+    display: block;
+    margin: 30px auto;
+    padding: 0;
+    width: 200px;
+    padding: 20px;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    cursor: pointer;
+    background-color: #1779B7;
+    color: #ecf0f1;
+    transition: background-color .2s;
 }
-
-.btn:hover, .btn:focus {
-  background-color: #084369;
-}
-
-/**** WEATHER *****/
-.galleta {
+.btn:hover,
+.btn:focus {
     background-color: #084369;
+}
+
+/************** GALLETA DE LA SUERTE *************/
+.galleta {
     margin-top: 30px;
     padding: 20px;
 }
+.no-shadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.ver-mensaje {
+    width: 70%;
+    font-size: 16px;
+    border-radius: 50%;
+}
+.ver-mensaje:focus {
+    background-color: #7a1ea0;
+}
 
+/************** FOOTER *************/
+footer {
+    text-align: right;
+    height: 50px;
+    background-color: #084369;
+    line-height: 50px;
+    font-size: 14px;
+    padding-right: 5%;
+}
+
+/************** ANIMACION *************/
+@keyframes boton {
+    0% {
+        top: -1000px;
+    }
+    90% {
+        top: 25%;
+    }
+    100% {
+        top: 15%;
+    }
+}
