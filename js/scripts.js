@@ -22,7 +22,7 @@ $(document).ready(function() {
     // Burrigalleta de la suerte
     $(".ver-mensaje").click(function() {
         $.ajax({
-            url: "../galleta.js",
+            url: "./galleta.js",
             dataType: "script"
         });
     });
