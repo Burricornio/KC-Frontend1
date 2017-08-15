@@ -345,6 +345,20 @@ textarea:focus {
     background-color: #084369;
 }
 
+#contador {
+    font-size: 12px;
+    padding: 6px;
+}
+
+#contador span {
+    color: #1779B7;
+    font-weight: bold;
+}
+
+.fa-exclamation-triangle {
+    padding-right: 4px;
+}
+
 /************** GALLETA DE LA SUERTE *************/
 .galleta {
     margin-top: 30px;

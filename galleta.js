@@ -1,4 +1,3 @@
-
 var mensaje = [
     "¡¡¡Deberias ver menos la tele!!!",
     "¡¡¡Deberias masturbarte menos!!!",
