@@ -18,15 +18,6 @@ $(document).ready(function() {
             window.location.hash = target;
         });
     });
-
-    // Burrigalleta de la suerte
-    $(".ver-mensaje").click(function() {
-        $.ajax({
-            url: "./galleta.js",
-            dataType: "script"
-        });
-    });
-
      
 
     //Controlar el numero de caracteres del textarea

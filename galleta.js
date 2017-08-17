@@ -1,3 +1,4 @@
+console.log('galleta');
 var mensaje = [
     "¡¡¡Deberias ver menos la tele!!!",
     "¡¡¡Deberias masturbarte menos!!!",
@@ -8,4 +9,3 @@ var num = Math.round(Math.random() * 3);
 
 
 $('.ver-mensaje').text(mensaje[num].toUpperCase());
-
